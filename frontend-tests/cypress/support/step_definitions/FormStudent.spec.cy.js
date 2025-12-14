@@ -1,8 +1,14 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 Given("navigate to the DEMOQA website", () => {
-cy.visit("https://demoqa.com/", { timeout: 120000 });
+  cy.visit("https://demoqa.com/", {
+    timeout: 120000,
+    failOnStatusCode: false,
+  });
+
+  cy.reload();
 });
+
 
 When("click on 'Forms' in menu", () => {
   cy.contains(".card-body h5", "Forms").scrollIntoView().click();
@@ -29,7 +35,7 @@ When("click in 'female' checkbox", () => {
 });
 
 When("type valid phone number", () => {
-  cy.get("#userNumber").type("11999999");
+  cy.get("#userNumber").type("1313131313");
 });
 
 When("select a valid birth date", () => {
@@ -81,4 +87,21 @@ Then("click on submit button", () => {
   cy.get("#example-modal-sizes-title-lg")
     .should("be.visible")
     .and("have.text", "Thanks for submitting the form");
+});
+
+Given("the form is reset", () => {
+  cy.reload();
+});
+
+Then("type an invalid email", () => {
+  cy.get("#userEmail").clear().type("lara.cardoso@");
+});
+
+Then("type invalid phone number", () => {
+  cy.get("#userNumber").clear().type(" ");
+});
+
+Then("click on submit button should not submit", () => {
+  cy.get("#submit").scrollIntoView().click({ force: true });
+  cy.get("#example-modal-sizes-title-lg").should("not.exist");
 });
