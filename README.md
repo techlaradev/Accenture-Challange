@@ -12,9 +12,11 @@ The tests are designed to validate critical user flows using automated scenarios
 
 ### Frontend
 - Cypress
-- Cucumber (BDD)
+- Gherking (BDD)
 
 ### Backend / API
 - Node.js
-- JavaScript 
+- JavaScript
+- Gherking (BDD)
+- Jest.js
 
