@@ -16,5 +16,5 @@ The tests are designed to validate critical user flows using automated scenarios
 
 ### Backend / API
 - Node.js
-- JavaScript / TypeScript
+- JavaScript 
 
