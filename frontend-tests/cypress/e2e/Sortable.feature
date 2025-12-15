@@ -1,10 +1,9 @@
-Feature: Sortable flow
+Feature: Sortable Grid ordering
 
-  @happy
-  Scenario: Reorder items in the sortable list
-    Given access the DEMOQA website
+  @sortable
+  Scenario: Reorder grid items following ascending rule
+    Given access the website DEMOQA
     When select the Interactions option on the home page
     And click on the Sortable submenu
-    And move item One to the last position
-    Then the first item should not be One
-    And the last item should be One
+    And reorder items in ascending rule
+    Then the grid order should match the expected positions
