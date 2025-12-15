@@ -5,7 +5,7 @@ const feature = loadFeature("src/bdd/features/RentingBooks.feature");
 
 defineFeature(feature, (test) => {
   const validPassword = "Password123!";
-  const invalidIsbn = "INVALID_ISBN_123";
+  let invalidIsbn;
 
   let authUser;
   let token;

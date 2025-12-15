@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1765735840249" clover="3.2.0">
-  <project timestamp="1765735840249" name="All files">
+<coverage generated="1765761180506" clover="3.2.0">
+  <project timestamp="1765761180507" name="All files">
     <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0" elements="6" coveredelements="5" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
     <file name="request.js" path="C:\Users\Lara.cardoso\Desktop\personal\Accenture-Challange\Accenture-Challange\backend-tests\src\utils\request.js">
       <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-      <line num="1" count="2" type="stmt"/>
-      <line num="2" count="2" type="stmt"/>
-      <line num="4" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="5" count="2" type="stmt"/>
+      <line num="1" count="3" type="stmt"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="4" count="3" type="cond" truecount="1" falsecount="1"/>
+      <line num="5" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>
